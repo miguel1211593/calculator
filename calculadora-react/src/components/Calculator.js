@@ -4,7 +4,7 @@ import SpecialButton from './SpecialButton';
 import  AppContext from './../context/AppContext';
 import { actionTypes } from './../context/Actions';
 import './Calculator.css'; 
-
+import backspace from './../images/backspace.png';
 
 const Calculator = () => {
   const { state, dispatch } = useContext(AppContext);
@@ -45,14 +45,9 @@ return (
             <td colSpan="3">
               <Button value="C" onClick={() => handleButtonClick("C")} />
             </td>
-            <td colSpan="1">
-            <SpecialButton
-                value="<-"
-                image="./../images/backspace.png"
-                onClick={() => handleButtonClick("<-")} />
-            </td>
+            
           </tr>
-            {[7, 8, 9, 4, 5, 6, 1, 2, 3, 0,"."].reduce((rows, number, index) => {
+            {[7, 8, 9, 4, 5, 6, 1, 2, 3, 0,".","="].reduce((rows, number, index) => {
               if (index % 3 === 0) {
                 rows.push([]);
               }
@@ -73,11 +68,11 @@ return (
           <table>
             <tr>
               <td>
+                <SpecialButton value="<-" image={backspace} onClick={() => handleButtonClick("<-")} />
                 <Button value="/" onClick={() => handleButtonClick("/")} />
                 <Button value="x" onClick={() => handleButtonClick("*")} />
                 <Button value="-" onClick={() => handleButtonClick("-")} />
                 <Button value="+" onClick={() => handleButtonClick("+")} />
-                <Button value="=" onClick={() => handleButtonClick("=")} />
               </td>
             </tr>
           </table>

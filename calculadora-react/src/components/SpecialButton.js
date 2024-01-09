@@ -3,8 +3,8 @@ import React from 'react';
 
 const SpecialButton = ({ value, image, onClick }) => {
   return (
-    <button className="special-button" onClick={onClick}>
-      {image ? <img src={require(image)} alt={value} /> : value}
+    <button className="specialCharacters" onClick={onClick}>
+      {image ? <img src={image} alt={value} className="button-image"/> : value}
     </button>
   );
 };

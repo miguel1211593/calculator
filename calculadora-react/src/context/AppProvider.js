@@ -9,7 +9,9 @@ const initialState = {
     operator: null,
     firstOperand: null,
     waitingForSecondOperand: false,
-};
+    operations: [],
+  };
+  
 
 const AppProvider = props => {
     const [state, dispatch] = useReducer(calculatorReducer, initialState);
