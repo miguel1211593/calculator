@@ -81,8 +81,7 @@ return (
   </div>
 );
 
-  
-  
+
 };
 
 export default Calculator;
