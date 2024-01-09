@@ -1,0 +1,50 @@
+.calculator {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+background-color: #ececec;
+}
+  
+.display {
+font-size: 35px;
+padding: 10px;
+border: 1px solid #000000;
+border-radius: 5px;
+width: 100%;
+margin-bottom: 40px;
+}
+
+.tableNumbers{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 50px; 
+}
+
+.numbers {
+font-size: 20px;
+padding: 20px;
+border: 1px solid #000000;
+width: 100%;
+border-radius: 10px;
+}
+
+.numbers button {
+width: 100%;
+padding: 20px; /* Ajuste o tamanho do padding conforme necessário */
+font-size: 20px;
+color: #000000;
+}
+
+
+.tableNumbers button:hover,
+.operators button:hover {
+  background-color: #ddd; /* Cor de fundo quando o botão é clicado (ajuste conforme desejado) */
+}
+
+.operators {
+display: flex;
+font-size: 50px;
+width: 80%;
+}
