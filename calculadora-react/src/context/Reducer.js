@@ -57,8 +57,18 @@ const calculatorReducer = (state, action) => {
         firstOperand: null,
         waitingForSecondOperand: false,
       };
+    case actionTypes.BACKSPACE:
+    let value = state.displayValue;
+    let newValue = value.substr(0, value.length - 1);
+    return {
+        ...state,
+        displayValue: newValue,
+    };
     default:
       return state;
+
+      
+      
   }
 };
 

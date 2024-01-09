@@ -16,6 +16,31 @@ width: 100%;
 margin-bottom: 40px;
 }
 
+.specialCharacters {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    gap: 50px;
+    margin-right: 442px;
+    font-size: 20px;
+  }
+  
+  .specialCharacters button {
+    width: 100%;
+    padding: 20px; /* Ajuste o tamanho do padding conforme necessário */
+    font-size: 20px;
+    color: #000000;
+  }
+
+.characters {
+    font-size: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    width: 100%;
+    border-radius: 10px;
+    gap: 50px;
+}
+
+
 .tableNumbers{
 display: grid;
 grid-template-columns: 1fr 1fr;
@@ -30,14 +55,7 @@ width: 100%;
 border-radius: 10px;
 }
 
-.numbers button {
-width: 100%;
-padding: 20px; /* Ajuste o tamanho do padding conforme necessário */
-font-size: 20px;
-color: #000000;
-}
-
-
+.specialCharacters button:hover,
 .tableNumbers button:hover,
 .operators button:hover {
   background-color: #ddd; /* Cor de fundo quando o botão é clicado (ajuste conforme desejado) */

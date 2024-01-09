@@ -4,6 +4,7 @@ export const actionTypes = {
     OPERATOR: 'OPERATOR',
     EQUALS: 'EQUALS',
     CLEAR: 'CLEAR',
+    BACKSPACE: 'BACKSPACE',
   };
   
   export const inputAction = (payload) => ({
@@ -22,5 +23,9 @@ export const actionTypes = {
   
   export const clearAction = () => ({
     type: actionTypes.CLEAR,
+  });
+
+  export const backSpaceAction = () => ({
+    type: actionTypes.BACKSPACE,
   });
   
